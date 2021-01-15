@@ -347,6 +347,7 @@
     background: rgb(255, 156, 75);
     padding-top: 260px;
     padding-bottom: 220px;
+    max-height: 100%;
   }
 
   .contact-me h1{
@@ -499,12 +500,21 @@
     .intro p{
       text-align: left;
       padding-left: 30px !important;
+      padding-bottom: 0;
+    }
+    .intro{
+      margin-bottom: 70%;
     }
 
+}
+
+@media screen and (max-width: 500px)
+{
     .about--me{
-      padding-bottom: 1500px !important;
+      padding-bottom: 1500px;
     }
 }
+
 
 @media screen and (max-width: 700px){
  
@@ -544,4 +554,3 @@
   }
 }
 /* //phone compatibility */
-
