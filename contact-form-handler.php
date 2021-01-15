@@ -5,16 +5,18 @@
 
     $message_from = 'anon8014@gmail.com';
 
-    $email_subject = 'Message From Website';
+    $email_subject = "New Form Submission";
 
-    $email_body = "Name : $name\nEmail: $email\nMessage: $message"
+    $email_body = "Name : $name\n"."Email: $visitor_email\n"."Message: $message"
 
     $to = "alinaqvi8014@gmail.com";
 
     $headers = "From: $email_from \r\n";
     
+    $headers = "Reply-To: $visitor_email \r\n";
+
     mail($to, $email_subject, $email_body, $headers);
 
-    header("location: index.html")
+    header("location: index.html");
 
 ?>
