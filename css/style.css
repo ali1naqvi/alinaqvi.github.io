@@ -1,88 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
-@import url(https://fonts.googleapis.com/css?family=Quicksand);
-
-
-/* robot credits to Henry Snopek, https://codepen.io/hhsnopek */
-#robot{
-  position: absolute;  
-  top: 70%;
-  left: 70%;
-  margin-top: -30px;
-  margin-left: -(3em/2);
-  transform: scale(5);
-  float: right;
-  animation-name: fadeIn;
-  animation-duration: 4s;
-}
-  #bot {
-    position: absolute;
-    height: 30px;
-    width: 50px;
-    background-color: #2b7a78;
-  }
-
-  
-    #reyes{
-      position: absolute;
-      width: 40px;
-      height: 20px;
-      top: 5px;
-      left: 5px;
-      background-color: #17252a;
-    }
-      .reye{
-        height: 10px;
-        width: 5px;
-        background-color: #def2f1;
-        animation: 5.6s eyeBlink .35s linear infinite;
-        border-radius:  40%;
-      }
-      #rleft{
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        margin-top: -5px;
-      }
-      #rright{
-        position: absolute;
-        top: 50%;
-        right: 25%;
-        margin-top: -5px;
-      }
-  #rneck{
-    position: absolute;
-    top: 30px;
-    width: 40px;
-    height: 3px;
-    background-color: rgb(15, 15, 15);
-    margin-left: 5px;
-  }
-  
-  #rbody{
-    position: absolute;
-    top: 33px;
-    width: 50px;
-    height: 10px;
-    background-color:#2b7a78;
-    z-index: 4;
-  }
-
-  #rshadow{
-    position: absolute;
-    top: 40px;
-    left: -4.6px;
-    height: 5px;
-    width: 60px;
-    opacity: 100%;
-    border-radius:  40%;
-    background: #216663;
-    transform: rotateY(-10deg) !important;
-    z-index: 3;
-  }
-
-/* //robot */
-
-
 
 /* extras */
   html {
@@ -532,27 +448,6 @@
   }
 
 }*/
-@media screen and (max-width: 1400px){
-  #robot{
-    top: 70%;
-  }
-}
-
-
-@media screen and (max-width: 1200px){
-  #robot{
-    top: 75%;
-  }
-}
-
-@media screen and (max-width: 680px){
-  #robot{
-    top: 90% !important;
-    left: 55% !important;
-  }
-}
-
-
 
 @media screen and (max-width: 1100px){
   
@@ -562,10 +457,6 @@
     animation-duration: 2s;
   } 
 
-  #robot{
-    top: 85%;
-    left: 60%;
-  }
 
   .column {
     width: 100%;
@@ -593,7 +484,6 @@
     display:block;
   }
   
-
   .scrolling-active .nav-link ul{
     animation-name: frontcolor !important;
     animation-duration: 0.5s;
@@ -643,23 +533,9 @@
       text-align: left;
       padding-left: 30px !important;
     }
-
-    #robot{
-      top: 95% !important;
-      left: 50% !important;
-      transform: scale(4) !important;
-    }
 }
 
 @media screen and (max-width: 700px){
-  /*
-  .container {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-    height: 10%;
-  }*/
-  
   .glider figure{
     margin: 10px;
     padding: 4em !important;
@@ -678,11 +554,6 @@
     margin-bottom: 50px;
   }
 
-  #robot{
-    top: 80%;
-    transform: scale(4);
-  }
-
   .intro h1{
     padding-left: 60px;
     margin-top: -60px;
@@ -699,14 +570,6 @@
   .form-control{
     width:80%;
   }
-
-
 }
-
-
-
-
-
-
 /* //phone compatibility */
 
