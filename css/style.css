@@ -210,10 +210,12 @@
   }
 
   strong{
+    display: inline-block;
     color: #def2f1;
     font-weight: bolder;
     font-size: 1.1em;
-    animation: pulse 2s infinite !important;
+    animation: pulse 2s infinite;
+	  
   }
 /* //home */
 
