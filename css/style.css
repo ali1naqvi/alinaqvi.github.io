@@ -50,13 +50,13 @@
 
   @keyframes pulse {
     0% {
-      font-size: 1.1em;
+      font-size: 1.2em;
 	}
     70% {
-      transform: 1em;
+      font-size: 1em;
     }
     100% {
-      transform: 1.1em;
+      font-size: 1em;
     }
   }
 
