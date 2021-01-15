@@ -64,24 +64,6 @@
     }
   }
 
-  @keyframes wordBlink{
-    0%, 10%{
-      color: #def2f1;
-    }
-    15%{
-      color: transparent;
-    }
-    20%, 50%, 80%{
-      color: #def2f1;
-    }
-    85%{
-      color: transparent;
-    }
-    90%, 100%{
-      color: #def2f1;
-    }
-  } 
-
 
   @keyframes backcolor {
     0% {
