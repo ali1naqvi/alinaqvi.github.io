@@ -26,7 +26,6 @@
     animation-fill-mode: both;
     height: 3.5rem;
   }
-
 /* //extras */
 
 /* body */
@@ -217,7 +216,7 @@
     color: #def2f1;
     font-weight: bolder;
     font-size: 1.1em;
-    animation: pulse 2s infinite;
+    animation: pulse 2s infinite !important;
   }
 /* //home */
 
