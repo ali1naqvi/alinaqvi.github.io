@@ -1,0 +1,712 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+
+/* robot credits to Henry Snopek, https://codepen.io/hhsnopek */
+#robot{
+  position: absolute;  
+  top: 70%;
+  left: 70%;
+  margin-top: -30px;
+  margin-left: -(3em/2);
+  transform: scale(5);
+  float: right;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+  #bot {
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    background-color: #2b7a78;
+  }
+
+  
+    #reyes{
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      top: 5px;
+      left: 5px;
+      background-color: #17252a;
+    }
+      .reye{
+        height: 10px;
+        width: 5px;
+        background-color: #def2f1;
+        animation: 5.6s eyeBlink .35s linear infinite;
+        border-radius:  40%;
+      }
+      #rleft{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        margin-top: -5px;
+      }
+      #rright{
+        position: absolute;
+        top: 50%;
+        right: 25%;
+        margin-top: -5px;
+      }
+  #rneck{
+    position: absolute;
+    top: 30px;
+    width: 40px;
+    height: 3px;
+    background-color: rgb(15, 15, 15);
+    margin-left: 5px;
+  }
+  
+  #rbody{
+    position: absolute;
+    top: 33px;
+    width: 50px;
+    height: 10px;
+    background-color:#2b7a78;
+    z-index: 4;
+  }
+
+  #rshadow{
+    position: absolute;
+    top: 40px;
+    left: -4.6px;
+    height: 5px;
+    width: 60px;
+    opacity: 100%;
+    border-radius:  40%;
+    background: #216663;
+    transform: rotateY(-10deg) !important;
+    z-index: 3;
+  }
+
+/* //robot */
+
+
+
+/* extras */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+  }
+
+  .scrolling-active .nav-link{
+    animation-name: frontcolor;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    height: 3.5rem;
+    box-shadow: 0 3px  1rem rgb(0, 0, 0, 0.1);
+  }
+
+  .scrolling-nonactive .nav-link{
+    animation-name: backcolor;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    height: 3.5rem;
+  }
+
+/* //extras */
+
+/* body */
+  body {
+    background: #3aafa9;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #172f2a;
+
+  }
+/* //body */
+
+/* animations */
+  @keyframes frontcolor {
+    0% {
+      background-color:  #3aafa9;
+    }
+    100% {
+      background-color: black;
+    } 
+  }
+
+  @keyframes eyeBlink{
+    0%, 10%{
+      background-color: #def2f1;
+    }
+    15%{
+      background-color:#17252a;
+    }
+    20%, 50%, 80%{
+      background-color: #def2f1;
+    }
+    85%{
+      background-color: #17252a;
+    }
+    90%, 100%{
+      background-color:#def2f1;
+    }
+  } 
+
+  @keyframes wordBlink{
+    0%, 10%{
+      color: #def2f1;
+    }
+    15%{
+      color: transparent;
+    }
+    20%, 50%, 80%{
+      color: #def2f1;
+    }
+    85%{
+      color: transparent;
+    }
+    90%, 100%{
+      color: #def2f1;
+    }
+  } 
+
+
+  @keyframes backcolor {
+    0% {
+      background-color: black;
+    }
+    100% {
+      background-color:  #3aafa9;
+    }
+  }
+
+
+  @keyframes scaleback{
+    100% {
+      transform: scale(1.05);
+    }
+    0% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes mscaleback{
+    100% {
+      transform: scale(1.02);
+    }
+    0% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }   
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      }
+    100% {
+      opacity: 1;
+    }
+  }  
+/* //animations */
+
+/*header*/
+  .nav-link{
+    background: #3aafa9;
+    top: 0;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    z-index: 999; 
+
+  }
+
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 50px;
+    padding: 0 70px;
+    float: left;
+    font-weight: bold;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
+
+  .nav-link ul{
+    float: right;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
+
+  .nav-link ul li{
+    display: inline-block;
+    line-height: 20px;
+    margin: 0 5px;
+    
+  }
+
+  .nav-link ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  .nav-link a:hover{
+    font-weight: bold;
+    transition: .5s;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+  
+
+  /* //header */
+
+  /* home */
+  .intro{
+    margin: 232px 0px 419px 0px;
+  }
+
+  .intro h1{
+    padding-left: 60px;
+    font-size: 5em;
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  } 
+
+  .intro p{
+    text-align: left;
+    padding-left: 63px;
+    padding-top: 40px;
+    font-size: 30px;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    margin-bottom: 25px;
+    z-index: 9999;
+  }
+
+  strong{
+    color: #def2f1;
+    font-weight: bolder;
+    font-size: 1.1em;
+    animation: 5.6s wordBlink .35s linear infinite;
+  }
+/* //home */
+
+/*about me */
+  .about--me{
+    background-color: #def2f1;
+    padding-bottom: 510px;
+    position: relative;
+    width: 100%;
+    height: 460px;
+    font-size: 1.3em;
+  }
+
+  .about{
+    display: table;
+    box-sizing: border-box;
+  }
+
+  .about--me h2{
+    padding-top: 2.9em;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+
+  .column{
+    display: table-cell;
+    padding: 10px;
+    width: 33.333%;
+    text-align: center;
+    border: 10px solid #def2f1;
+    background-color: #c5f1ef;
+    padding-bottom: 120px;
+    box-shadow: 0 3px 1rem rgb(0, 0, 0, 0.1);
+    transform: scale(0.9);
+  
+  }
+
+  .column:hover{
+    animation-name: scaleback;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  .column h3{
+    font-size: 1.5em;
+    text-decoration: underline !important;
+  }
+
+  .column h4{
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+
+  .column h5{
+    color: rgb(70, 66, 66);
+    margin-bottom: -10px;
+  }
+
+  space-p{
+    padding-bottom: 2em;
+  }
+/* //about me */
+
+/* projects */
+  .my-projects{
+    padding-top: 45px;
+    background-color: #17252a;
+    color: #000;
+    padding-bottom: 98px;
+  }
+  .my-projects h2{
+    padding-top: 1.2em;
+    color: #def2f1;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: -90px;
+  }
+
+  .glider figure{
+    background:#def2f1 !important;
+    display: block;
+    margin: 1.45em;
+    padding: 10em;
+    box-shadow: 5px 10px  #0f181b;
+  }
+
+  .glider blockquote{
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .glider figcaption{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: .9em;
+    text-transform: uppercase;
+    text-decoration: underline; 
+  }
+
+  .glider-contain {
+    width: 85% !important;
+    margin-top: 12%;
+    margin-bottom: -50px;
+  }
+
+  .glider-next {
+    right: -50px;
+    top: 40%;
+  }
+
+  .glider-prev {
+    left: -40px;
+    top: 40%;
+  }
+/* //projects panel*/
+/*# sourceMappingURL=style.css.map */
+
+/*contact form*/
+  .contact-me{
+    background: rgb(255, 156, 75);
+    padding-top: 260px;
+    padding-bottom: 220px;
+  }
+
+  .contact-me h1{
+    margin-top: -100px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 70px;
+
+  }
+
+  .contact-form{
+    font-size: 16px;
+    margin-top: -80px;
+    color:rgb(110, 110, 110) !important;
+  }
+
+  form{
+    margin-top: 110px;
+    text-align: center;
+  }
+
+  .form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1.2px solid rgb(110, 110, 110);
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: white !important;
+  }
+
+  input{
+    height: 70px;
+  }
+
+  form .submit{
+    background: #383838;
+    border-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  form .submit:hover{
+    background-color: #181818;
+    cursor: pointer;
+  }
+/* //contact form*/
+
+/* footer */
+  .web-footer{
+    background: #141413;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 5px;
+    color: white;
+    text-align: left;
+    position: relative;
+  }
+
+  .web-footer h1{
+    font-size: 15px;
+    margin-top: 10px;
+    top:0;
+  }
+/* //footer */
+
+/* phone compatibility 
+@media screen and (max-width: 952px){
+  .nav-link{
+    width: 100%;  
+  }
+  label.logo{
+    padding-left: 50px;
+  }
+
+  .nav-link ul li a{
+    font-size: 16px;
+  }
+
+}*/
+@media screen and (max-width: 1400px){
+  #robot{
+    top: 70%;
+  }
+}
+
+
+@media screen and (max-width: 1200px){
+  #robot{
+    top: 75%;
+  }
+}
+
+@media screen and (max-width: 680px){
+  #robot{
+    top: 90% !important;
+    left: 55% !important;
+  }
+}
+
+
+
+@media screen and (max-width: 1100px){
+  
+  .checkbtn{
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  } 
+
+  #robot{
+    top: 85%;
+    left: 60%;
+  }
+
+  .column {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    box-sizing: border-box;
+    animation: none !important;
+  }
+
+  .about--me{
+    height: 1350px;
+  }
+
+  .intro h1{
+    padding-left: 60px;
+    text-align: left !important;
+  }
+
+  .intro p{
+    padding-left: 63px;
+    text-align: left;
+  }
+  
+  strong{
+    display:block;
+  }
+  
+
+  .scrolling-active .nav-link ul{
+    animation-name: frontcolor !important;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  .scrolling-nonactive .nav-link ul{
+    animation-name: backcolor !important;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  .nav-link ul{
+   position:fixed;
+   margin-top: -24px;
+   width: 100%;
+   height: 200%;
+   top: 80px;
+   right: -120%;
+   text-align: center;
+   transition: all .5s;
+   background-color: #3aafa9;
+  }
+
+  .nav-link ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .nav-link ul li a{
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul{
+    right: 0;
+  }
+
+}
+
+@media screen and (max-width: 550px)
+{
+    .intro h1{
+      padding-left: 30px !important;
+    }
+    .intro p{
+      text-align: left;
+      padding-left: 30px !important;
+    }
+
+    #robot{
+      top: 95% !important;
+      left: 50% !important;
+      transform: scale(4) !important;
+    }
+}
+
+@media screen and (max-width: 700px){
+  /*
+  .container {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 10%;
+  }*/
+  
+  .glider figure{
+    margin: 10px;
+    padding: 4em !important;
+    margin-right: 10px;
+  }
+
+  .glider-next{
+    right: -30px;
+  }
+
+  .glider-prev{
+    left: -30px;
+  }
+
+  .my-projects h2{
+    margin-bottom: 50px;
+  }
+
+  #robot{
+    top: 80%;
+    transform: scale(4);
+  }
+
+  .intro h1{
+    padding-left: 60px;
+    margin-top: -60px;
+    margin-left: 0;
+    text-align: left !important;
+    }
+  
+    .intro p{
+      text-align: left;
+      float: middle;
+      padding-left: 60px;
+    }
+
+  .form-control{
+    width:80%;
+  }
+
+
+}
+
+
+
+
+
+
+/* //phone compatibility */
+
