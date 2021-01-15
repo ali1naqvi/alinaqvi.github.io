@@ -210,7 +210,7 @@
 
   strong{
     display: inline-block;
-    animation-name: wordBlink;
+    animation-name: pulse;
     animation-duration: 5000ms;
     transform-origin:70% 70%;
     animation-iteration-count: infinite;
