@@ -53,24 +53,6 @@
     } 
   }
 
-  @keyframes eyeBlink{
-    0%, 10%{
-      background-color: #def2f1;
-    }
-    15%{
-      background-color:#17252a;
-    }
-    20%, 50%, 80%{
-      background-color: #def2f1;
-    }
-    85%{
-      background-color: #17252a;
-    }
-    90%, 100%{
-      background-color:#def2f1;
-    }
-  } 
-
   @keyframes pulse{
 
       0% { transform: scale(1); }
@@ -199,9 +181,7 @@
   #check{
     display: none;
   }
-
   
-
   /* //header */
 
   /* home */
@@ -375,7 +355,6 @@
     font-size: 50px;
     text-align: center;
     padding-bottom: 70px;
-
   }
 
   .contact-form{
@@ -429,6 +408,7 @@
     color: white;
     text-align: left;
     position: relative;
+    bottom: 0%;
   }
 
   .web-footer h1{
@@ -454,6 +434,10 @@
     margin: 10px 0;
     box-sizing: border-box;
     animation: none !important;
+  }
+
+  .about--me{
+    padding-bottom: 1350px !important;
   }
 
   .intro h1{
@@ -537,10 +521,6 @@
 
   .my-projects h2{
     margin-bottom: 50px;
-  }
-
-  .about--me{
-    margin-bottom: 1350px !important;
   }
 
   .intro h1{
