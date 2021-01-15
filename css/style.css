@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+
 
 /* extras */
   html {
@@ -26,6 +29,7 @@
     animation-fill-mode: both;
     height: 3.5rem;
   }
+
 /* //extras */
 
 /* body */
@@ -34,7 +38,8 @@
     margin: 0;
     font-family: 'Playfair Display', serif;
     color: #172f2a;
-
+    height: 100%;
+    width: 100% !important;
   }
 /* //body */
 
@@ -48,16 +53,36 @@
     } 
   }
 
-  @keyframes pulse {
-   0% { transform: scale(1); }
-   30% { transform: scale(1); }
-   40% { transform: scale(1.02); }
-   50% { transform: scale(1); }
-   60% { transform: scale(1); }
-   70% { transform: scale(1.01); }
-   80% { transform: scale(1); }
-   100% { transform: scale(1); }
-  }
+  @keyframes eyeBlink{
+    0%, 10%{
+      background-color: #def2f1;
+    }
+    15%{
+      background-color:#17252a;
+    }
+    20%, 50%, 80%{
+      background-color: #def2f1;
+    }
+    85%{
+      background-color: #17252a;
+    }
+    90%, 100%{
+      background-color:#def2f1;
+    }
+  } 
+
+  @keyframes pulse{
+
+      0% { transform: scale(1); }
+      30% { transform: scale(1); }
+      40% { transform: scale(1.02); }
+      50% { transform: scale(1); }
+      60% { transform: scale(1); }
+      70% { transform: scale(1.01); }
+      80% { transform: scale(1); }
+      100% { transform: scale(1); }
+  } 
+
 
   @keyframes backcolor {
     0% {
@@ -214,11 +239,11 @@
     animation-duration: 5000ms;
     transform-origin:70% 70%;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;	  
+    animation-timing-function: linear;
     color: #def2f1;
     font-weight: bolder;
     font-size: 1.1em;
-	  
+    
   }
 /* //home */
 
@@ -413,20 +438,7 @@
   }
 /* //footer */
 
-/* phone compatibility 
-@media screen and (max-width: 952px){
-  .nav-link{
-    width: 100%;  
-  }
-  label.logo{
-    padding-left: 50px;
-  }
-
-  .nav-link ul li a{
-    font-size: 16px;
-  }
-
-}*/
+/* phone compatibility */
 
 @media screen and (max-width: 1100px){
   
@@ -436,17 +448,12 @@
     animation-duration: 2s;
   } 
 
-
   .column {
     width: 100%;
     display: block;
     margin: 10px 0;
     box-sizing: border-box;
     animation: none !important;
-  }
-
-  .about--me{
-    height: 1350px;
   }
 
   .intro h1{
@@ -459,6 +466,7 @@
     text-align: left;
   }
   
+
   .scrolling-active .nav-link ul{
     animation-name: frontcolor !important;
     animation-duration: 0.5s;
@@ -508,9 +516,11 @@
       text-align: left;
       padding-left: 30px !important;
     }
+
 }
 
 @media screen and (max-width: 700px){
+ 
   .glider figure{
     margin: 10px;
     padding: 4em !important;
@@ -527,6 +537,10 @@
 
   .my-projects h2{
     margin-bottom: 50px;
+  }
+
+  .about--me{
+    margin-bottom: 1350px !important;
   }
 
   .intro h1{
