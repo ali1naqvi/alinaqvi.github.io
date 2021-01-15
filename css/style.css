@@ -181,7 +181,7 @@
   #check{
     display: none;
   }
-  
+
   /* //header */
 
   /* home */
@@ -437,7 +437,7 @@
   }
 
   .about--me{
-    padding-bottom: 1350px !important;
+    padding-bottom: 1350px;
   }
 
   .intro h1{
@@ -501,6 +501,9 @@
       padding-left: 30px !important;
     }
 
+    .about--me{
+      padding-bottom: 1500px !important;
+    }
 }
 
 @media screen and (max-width: 700px){
