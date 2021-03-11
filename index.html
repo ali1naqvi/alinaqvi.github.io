@@ -17,7 +17,16 @@
         <link href="css/glider.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="aos/aos.css">
-       
+        <script src='script.js'></script>
+        <script 
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_sh6E2QzRt4v5nCC07caA3");
+            })();
+        </script>
     </head>
 
     <!--Body-->
@@ -86,7 +95,7 @@
                 <div class="column">
                     <h3>Skills</h3>
                     <h4>Programming Languages</h4>
-                    <space-p><p>Java</br>C/C++</br>Javascript</br>Python</br>HTML</br>CSS</p></space-p>
+                    <space-p><p>Java</br>C/C++</br>Javascript</br>HTML</br>CSS</p></space-p>
                     <h4>Tools & Technology</h4>
                     <space-p><p>Linux cli</br>IDEs (Clion, Eclipse, NetBeans)</br>Microsoft Office</br>Adobe (Premiere Pro, After Effects, Photoshop)</p></space-p>
                     <h4></h4>
@@ -119,11 +128,11 @@
                     <div class="glider">
                         <figure>
                             <figcaption><a href="https://github.com/ali1naqvi/alinaqvi.github.io">Portfolio Website</a></figcaption>
-                            <blockquote> A self-portfolio website designed using CSS, HTML and javascript that is fully mobile compatible.</blockquote>
+                            <blockquote> A self-portfolio website designed using CSS, html and javascript that is fully mobile compatible.</blockquote>
                         </figure>
                         <figure>
                             <figcaption><a href="https://github.com/ali1naqvi/Sudoku">Sudoku</a></figcaption>
-                            <blockquote>A highly sophisticated sudoku game designed using Java and HTML.</blockquote>
+                            <blockquote>A highly sophisticated sudoku game designed using Javafx and html.</blockquote>
                         </figure>
                         <figure>
                             <figcaption> Project 3</figcaption>
@@ -196,16 +205,15 @@
         <!-- Contact -->
         <section class="contact-me" id="contact">
             <h1 data-aos="fade-up">Contact Me</h1>
-
             <div class= "contact-form" id="contact" data-aos="fade-up">
-                <form action="contact-form-handler.php" id="contact-form" method="POST">
-                    <input name="name" type="text" class="form-control" placeholder="Name" required><br>
+                <form id="contact-form">
+                    <input name="name" type="text" class="form-control" id="toName" placeholder="Name" required><br>
                     
-                    <input name="email" type="text" class="form-control" placeholder="Email" required><br>
+                    <input name="email" type="text" class="form-control" id="fromName" placeholder="Email" required><br>
                     
-                    <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                    <textarea name="message" class="form-control" id="msg" placeholder="Message" rows="4" required></textarea><br>
 
-                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                    <input type="submit" class="form-control submit" onclick='sendMail()'></input>
 
                 </form>
             </div>
