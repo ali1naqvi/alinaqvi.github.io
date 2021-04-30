@@ -34,8 +34,7 @@
 
 /* body */
   body {
-    background: #3aafa9;
-    margin: 0;
+    background: #000000;
     font-family: 'Playfair Display', serif;
     color: #172f2a;
     width: 100% !important;
@@ -185,7 +184,8 @@
 
   /* home */
   .intro{
-    margin: 232px 0px 300px 0px;
+    background: #3aafa9;
+    padding: 232px 0px 232px 0px;
   }
 
   .intro h1{
@@ -241,7 +241,8 @@
     box-sizing: border-box;
   }
 
-  .about--me h2{
+  .about--me h1{
+    margin-top: -20px;
     padding-top: 2.9em;
     text-align: center;
     font-size: 50px;
@@ -487,9 +488,7 @@
       padding-left: 30px !important;
       padding-bottom: 0;
     }
-    .intro{
-      margin-bottom: 70%;
-    }
+
 
 }
 
