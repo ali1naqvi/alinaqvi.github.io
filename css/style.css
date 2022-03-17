@@ -37,6 +37,7 @@
     background: #141413;
     font-family: 'Playfair Display', serif;
     color: #172f2a;
+    overflow-x:hidden !important;
     width: 100% !important;
   }
 /* //body */
