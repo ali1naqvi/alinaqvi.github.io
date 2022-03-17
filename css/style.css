@@ -239,7 +239,7 @@
   .about{
     display: table;
     box-sizing: border-box;
-    overflow:hidden;
+    overflow:hidden !important;
   }
 
   .about--me h1{
